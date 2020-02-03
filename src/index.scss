@@ -1,0 +1,61 @@
+$white: #ffffff;
+$secondary-d2: #30313f;
+
+// Clay Overwrites
+.btn {
+  color: inherit;
+
+  // &:hover,
+  // &:focus,
+  // &.focus {
+  //   color: inherit;
+  // }
+}
+
+.autofit-row-center {
+  align-items: center;
+}
+
+// Portal structure
+.portal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left {
+}
+
+.center {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+.header,
+.content,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header,
+.footer {
+  color: $white;
+  background-color: $secondary-d2;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.header {
+  height: 56px;
+}
+
+.footer {
+  height: 118px;
+}

@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import CM from "./CM";
+import "./index.scss";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function App() {
+  return (
+    <div className="portal">
+      <div className="left">
+        <CM />
+      </div>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+      <div className="center">
+        <div className="header">Header</div>
+
+        <div className="content">Content</div>
+
+        <div className="footer">Footer</div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
