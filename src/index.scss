@@ -27,11 +27,11 @@ $secondary-d2: #30313f;
 }
 
 .center {
-  height: 50px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   flex-grow: 1;
+  height: 1000px;
 }
 
 .header,

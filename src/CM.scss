@@ -24,7 +24,7 @@ $cmBorderRight: 17rem;
 }
 
 .cm-bar {
-  position: relative;
+  position: fixed;
   display: flex;
   width: $cmWidth;
   height: 100vh;
@@ -51,9 +51,9 @@ $cmBorderRight: 17rem;
     transform: translateX(-100%);
   }
 
-  // &.cm-deactive {
-  //   transform: translateX(0%);
-  // }
+  &.cm-open {
+    // transform: translateX(0%);
+  }
 }
 
 .cm-submenu,

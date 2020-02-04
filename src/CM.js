@@ -8,7 +8,7 @@ import "./CM.scss";
 class CM extends React.Component {
   state = {
     parent: false,
-    children: false,
+    children: false
   };
 
   content = [
@@ -112,7 +112,8 @@ class CM extends React.Component {
     return (
       <cmContext.Provider
         value={{
-          contextSetChildren: childrenNew => this.setState({ children: childrenNew }),
+          contextSetChildren: childrenNew =>
+            this.setState({ children: childrenNew }),
           contextSetParent: parentNew => this.setState({ parent: parentNew }),
           contextStatus: childrenCurrent
         }}
@@ -137,9 +138,9 @@ class CM extends React.Component {
           <CSSTransition
             in={childrenCurrent !== buttonToggleLabel}
             timeout={{ enter: 0, exit: 300 }}
-            // classNames={{
-            //   enterDone: "cm-deactive"
-            // }}
+            classNames={{
+              enterDone: "cm-open"
+            }}
             unmountOnExit
           >
             <div className="cm-bar">
